@@ -121,6 +121,16 @@ Rewards incentivize the agent to learn desirable behaviors:
 
 ## Neural Network 🌐
 
+#### Why use a Neural Network 
+- A neural network generalizes across states, approximating Q-values efficiently for unseen states.
+- Neural networks are adept at handling complex, high-dimensional data like the game state vector.
+- As the game complexity grows (e.g., larger grids or additional rules), the neural network can adapt by adding more neurons or layers, making it more versatile than a Q-table.
+
+**Basically** works like this in **Inference:**
+- During gameplay, the agent feeds the current state into the neural network.
+- The network outputs Q-values for all possible actions.
+- The agent selects the action with the highest Q-value.
+
 #### Structure of the Neural Network
 
 **1. Input Layer:**
@@ -138,12 +148,9 @@ Rewards incentivize the agent to learn desirable behaviors:
 - **Purpose:** Outputs the Q-values for the three possible actions:
 
 **Turn left.**
-
 **Continue straight.**
-
 **Turn right.**
-
 - Each output neuron corresponds to the expected cumulative reward for its respective action, given the current state.
 
- 
+
  
