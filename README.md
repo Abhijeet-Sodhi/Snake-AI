@@ -157,8 +157,11 @@ Rewards incentivize the agent to learn desirable behaviors:
 - **Purpose:** Outputs the Q-values for the three possible actions:
 
 **Turn left.**
+
 **Continue straight.**
+
 **Turn right.**
+
 - Each output neuron corresponds to the expected cumulative reward for its respective action, given the current state.
 
 
