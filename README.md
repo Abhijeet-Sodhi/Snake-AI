@@ -8,6 +8,10 @@ The base code for this project was adapted from freeCodeCamp.org. While the orig
 
 ## Demo 🎬
 
+slowly progresses the game. this video is at roughly game 77.
+
+https://github.com/user-attachments/assets/e86d81d2-228e-4f8f-a4fc-80711ee8c96e
+
 ## The Code files: 📄
 
 **agent.py:** Contains the main AI agent logic, including state extraction, memory management, training steps, and gameplay decisions.
