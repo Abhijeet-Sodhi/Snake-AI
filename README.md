@@ -83,7 +83,9 @@ The action space represents all possible moves the snake can make at any step:
 Rewards incentivize the agent to learn desirable behaviors:
 
 **+10:** When the snake eats food.
+
 **-10:** When the snake collides with a wall or itself.
+
 **0:** Otherwise (normal movement).
 
 - The reward system guides the agent to prioritize survival and maximize the score.
