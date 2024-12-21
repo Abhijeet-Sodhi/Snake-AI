@@ -133,6 +133,9 @@ Rewards incentivize the agent to learn desirable behaviors:
 
 ### Structure of the Neural Network
 
+![image](https://github.com/user-attachments/assets/f7e31b13-1a7a-4140-8cbc-979efb60deff)
+**MAIN DIFFERENCE:** is that the middle hidden layer consists of 256 nodes (neurons) not just 20 if i put that image it would look like a mess.
+
 **1. Input Layer:**
 - **Size:** 11 neurons.
 - **Purpose:** Takes the current state of the game as input.
