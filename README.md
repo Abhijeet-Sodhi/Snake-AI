@@ -65,6 +65,7 @@ The state represents the current snapshot of the game environment, which the age
 
 **Example:**
 - For a snake moving upward with food to the left and danger straight, the state could be:
+
 **[1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0]**
 
 ### Actions (A):
