@@ -49,7 +49,7 @@ Ensure you have the following dependencies installed:
   *python agent.py*
 
 ## Theory insight 💡
-#### States (S):
+### States (S):
 The state represents the current snapshot of the game environment, which the agent uses to decide its next action. In the Snake-AI project, the state is encoded as an **11-dimensional feature vector:**
 
 **Danger Indicators (3):**
@@ -67,7 +67,7 @@ The state represents the current snapshot of the game environment, which the age
 - For a snake moving upward with food to the left and danger straight, the state could be:
 **[1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0]**
 
-#### Actions (A):
+### Actions (A):
 The action space represents all possible moves the snake can make at any step:
 
 **Turn left:** [0,0,1]
@@ -76,7 +76,7 @@ The action space represents all possible moves the snake can make at any step:
 
 - The agent selects an action based on the predicted Q-values (**expected rewards**) for each action, either randomly (**exploration**) or through learned predictions (**exploitation**).
 
-#### Rewards (R):
+### Rewards (R):
 Rewards incentivize the agent to learn desirable behaviors:
 
 **+10:** When the snake eats food.
@@ -85,7 +85,7 @@ Rewards incentivize the agent to learn desirable behaviors:
 
 - The reward system guides the agent to prioritize survival and maximize the score.
 
-#### Q-Learning and Bellman’s Equation:
+### Q-Learning and Bellman’s Equation:
 
 ![image](https://github.com/user-attachments/assets/ff3f79f4-4f7e-4774-b97b-b638af8a7791)
 
@@ -94,7 +94,7 @@ Rewards incentivize the agent to learn desirable behaviors:
 
 - The Q-value is the expected cumulative reward of taking an action **𝐴** in a state **𝑆**, considering future rewards.
 
- #### Bellman’s Equation:
+ ### Bellman’s Equation:
  The Q-values are updated iteratively using Bellman’s equation:
  
  ![image](https://github.com/user-attachments/assets/0675e138-2ee4-423b-8a8a-b8d572b0bc89)
@@ -121,7 +121,7 @@ Rewards incentivize the agent to learn desirable behaviors:
 
 ## Neural Network 🌐
 
-#### Why use a Neural Network 
+### Why use a Neural Network 
 - A neural network generalizes across states, approximating Q-values efficiently for unseen states.
 - Neural networks are adept at handling complex, high-dimensional data like the game state vector.
 - As the game complexity grows (e.g., larger grids or additional rules), the neural network can adapt by adding more neurons or layers, making it more versatile than a Q-table.
@@ -131,7 +131,7 @@ Rewards incentivize the agent to learn desirable behaviors:
 - The network outputs Q-values for all possible actions.
 - The agent selects the action with the highest Q-value.
 
-#### Structure of the Neural Network
+### Structure of the Neural Network
 
 **1. Input Layer:**
 - **Size:** 11 neurons.
