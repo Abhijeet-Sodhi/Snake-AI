@@ -48,7 +48,7 @@ Ensure you have the following dependencies installed:
 
   *python agent.py*
 
-## Theory 💡
+## Theory insight 💡
 #### States (S):
 The state represents the current snapshot of the game environment, which the agent uses to decide its next action. In the Snake-AI project, the state is encoded as an **11-dimensional feature vector:**
 
@@ -119,6 +119,31 @@ Rewards incentivize the agent to learn desirable behaviors:
 
  ![image](https://github.com/user-attachments/assets/b391d9c1-7c9d-425a-b6f3-653841a42da6)
 
+## Neural Network 🌐
+
+#### Structure of the Neural Network
+
+**1. Input Layer:**
+- **Size:** 11 neurons.
+- **Purpose:** Takes the current state of the game as input.
+- The input state is represented as an 11-dimensional vector, encoding information about dangers, directions, and the food location.
+
+**2. Hidden Layer:**
+- **Size:** 256 neurons.
+- **Purpose:** Captures complex relationships between input features and learns patterns necessary to predict optimal actions.
+- **Activation Function:** ReLU (Rectified Linear Unit) Adds non-linearity to the network and helps model complex decision boundaries.
+
+**3. Output Layer:**
+- **Size:** 3 neurons.
+- **Purpose:** Outputs the Q-values for the three possible actions:
+
+**Turn left.**
+
+**Continue straight.**
+
+**Turn right.**
+
+- Each output neuron corresponds to the expected cumulative reward for its respective action, given the current state.
 
  
  
