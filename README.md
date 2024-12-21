@@ -66,13 +66,15 @@ The state represents the current snapshot of the game environment, which the age
 **Example:**
 - For a snake moving upward with food to the left and danger straight, the state could be:
 
-**[1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0]**
+  **[1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0]**
 
 ### Actions (A):
 The action space represents all possible moves the snake can make at any step:
 
 **Turn left:** [0,0,1]
+
 **Continue straight:** [1,0,0]
+
 **Turn right:** [0,1,0]
 
 - The agent selects an action based on the predicted Q-values (**expected rewards**) for each action, either randomly (**exploration**) or through learned predictions (**exploitation**).
