@@ -22,6 +22,10 @@ https://github.com/user-attachments/assets/e86d81d2-228e-4f8f-a4fc-80711ee8c96e
 
 **game.py:** Implements the Snake game logic, game environment, and interaction with the AI agent.
 
+**model.pth:** is a file that stores the trained parameters (weights and biases) of the neural network in the PyTorch framework.
+
+**arial.ttf** is a font file in TrueType Font (TTF) format.
+
 ## Functionality ⚙️
 **Training:**
 - Uses Deep Q-Learning with experience replay.
